@@ -1,0 +1,207 @@
+/* ==========================================
+   CONFIGURACION GENERAL
+========================================== */
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+}
+ 
+/* ==========================================
+   CONTENEDOR PRINCIPAL
+========================================== */
+ 
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+ 
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+ 
+/* ==========================================
+   DISTRIBUCION DE SECCIONES
+========================================== */
+ 
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+ 
+.seccion {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ 
+    display: flex;
+    flex-direction: column;
+}
+ 
+.seccion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+ 
+/* ==========================================
+   TITULOS
+========================================== */
+ 
+.titulo {
+    background-color: #eaf1fb;
+    color: #243b55;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+ 
+.titulo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+ 
+/* ==========================================
+   FORMULAS
+========================================== */
+ 
+.formula {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #40566f;
+}
+ 
+/* ==========================================
+   CAMPOS
+========================================== */
+ 
+.campo {
+    margin-bottom: 18px;
+}
+ 
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #444;
+}
+ 
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3dd;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+ 
+.campo input:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+ 
+/* ==========================================
+   BOTONES
+========================================== */
+ 
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #750dfd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+ 
+button:hover {
+    background-color: #960bd7;
+    transform: translateY(-2px);
+}
+ 
+button:active {
+    transform: scale(0.98);
+}
+ 
+/* ==========================================
+   RESULTADOS
+========================================== */
+ 
+.resultado {
+    background-color: #eaf4ff;
+    color: #174a7e;
+    font-weight: bold;
+    padding: 13px;
+    margin-top: 15px;
+    border-radius: 7px;
+    border-left: 4px solid #b90dfd;
+    min-height: 20px;
+    line-height: 1.6;
+}
+ 
+/* ==========================================
+   MENSAJES
+========================================== */
+ 
+.mensaje {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+ 
+/* ==========================================
+   SEPARADORES
+========================================== */
+ 
+hr {
+    border: 0;
+    border-top: 1px solid #e0e4e9;
+    margin: 25px 0;
+}
+ 
+/* ==========================================
+   RESPONSIVE
+========================================== */
+ 
+@media (max-width: 768px) {
+ 
+    .contenedor {
+        width: 94%;
+        margin: 25px auto;
+    }
+ 
+    h1 {
+        font-size: 26px;
+    }
+ 
+    .secciones {
+        flex-direction: column;
+    }
+ 
+    .seccion {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+ 
+}
