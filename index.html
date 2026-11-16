@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Matematica</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+    <div class="contenedor">
+        
+            <h1>Calculadora Matematica</h1>
+            
+            <div class="secciones">
+                
+                <!-- Suma 3 numeros -->
+                <div class="seccion">
+                    
+                    <div class="titulo">
+                        <h2>Suma de tres valores</h2>
+                    </div>
+                    
+                    <!-- Campo primer numero -->
+                    <div class="campo">
+                        
+                        <label for="primervalor">
+                            Primer valor
+                        </label>
+                        
+                        <input
+                            type="number"
+                            id="valor1"
+                            step="any"
+                            placeholder="Ingrese el primer valor">
+                            
+                        </div>
+                        
+                        <!-- Campo segundo numero -->
+                    <div class="campo">
+                        
+                        <label for="segundovalor">
+                            Segundo valor
+                        </label>
+                        
+                        <input
+                        type="number"
+                        id="valor2"
+                        step="any"
+                        placeholder="Ingrese el segundo valor">
+                        
+                    </div>
+
+                    <!-- Campo tercer numero -->
+                    <div class="campo">
+                        
+                        <label for="tercervalor">
+                            Tercer valor
+                        </label>
+                        
+                        <input
+                        type="number"
+                            id="valor3"
+                            step="any"
+                            placeholder="Ingrese el tercer valor">
+                            
+                        </div>
+                        
+                        <button type="button" onclick="calcularsuma()">
+                            Calcular suma
+                        </button>
+                        
+                    <div id="resultadoSuma" class="resultado"></div>
+                    
+                </div>
+
+                
+                <!-- Numero al cuadrado -->
+                <div class="seccion">
+
+                    <div class="titulo">
+                        <h2>Numero al cuadrado</h2>
+                    </div>
+                    
+                    <div class="campo">
+                        
+                        <label for="nCuadrado">
+                            Numero
+                        </label>
+
+                        <input
+                        type="number"
+                        id="nCuadrado"
+                        step="any"
+                        placeholder="Ingrese el valor del numero">
+                        
+                    </div>
+                    
+                    <hr>
+                    
+                    <button type="button" onclick="calcularCuadrado()">
+                        Calcular cuadrado
+                    </button>
+                    
+                    <div id="resultadoCuadrado" class="resultado"></div>
+                    
+                </div>
+                
+                
+                <!-- Promedio -->
+            <div class="seccion">
+                
+                <div class="titulo">
+                <h2>Promedio estudiante</h2>
+            </div>
+
+            <div class="campo">
+                <label for="estudiante">Nombre del estudiante</label>
+                <input type="text" id="estudiante" placeholder="Ingrese el nombre">
+            </div>
+            
+            <div class="campo">
+                <label for="nota1">Primera nota</label>
+                <input type="number" id="nota1" step="any" placeholder="Ingrese el primer numero">
+            </div>
+            
+            <div class="campo">
+                <label for="nota2">Segunda nota</label>
+                <input type="number" id="nota2" step="any" placeholder="Ingrese el segundo numero">
+            </div>
+            
+            <div class="campo">
+                <label for="nota3">Tercera nota</label>
+                <input type="number" id="nota3" step="any" placeholder="Ingrese el tercer numero">
+            </div>
+            
+            <button type="button" onclick="calcularPromedio()">
+                Calcular promedio
+            </button>
+            
+            <div id="resultadoPromedio" class="resultado"></div>
+        </div>
+        
+        <!-- Conversion -->
+        <div class="seccion">
+            
+            <div class="titulo">
+                        <h2>Conversion de unidades</h2>
+                    </div>
+                    
+                    <div class="campo">
+                        
+                        <label for="unidades">
+                            Metros
+                        </label>
+                        
+                        <input
+                        type="number"
+                        id="unidades"
+                        step="any"
+                        placeholder="Ingrese las unidades:">
+                        
+                    </div>
+                    
+                    <hr>
+                    
+                    <button type="button" onclick="convertirUnidades()">
+                        Calcular conversion
+                    </button>
+                    
+                    <div id="resultadocm" class="resultado"></div>
+                    <div id="resultadokm" class="resultado"></div>
+                    
+                </div>
+                
+                <!-- Comparacion -->
+                <div class="seccion">
+
+                    <div class="titulo">
+                        <h2>Comparacion de numeros</h2>
+                    </div>
+                    
+                    <div class="campo">
+                        
+                        <label for="compn1">
+                            Numero 1
+                        </label>
+
+                        <input
+                        type="number"
+                        id="n1"
+                        step="any"
+                        placeholder="Ingrese el primer numero:">
+                        
+                    </div>
+                    
+                    <div class="campo">
+                        
+                        <label for="compn2">
+                            Numero 2
+                        </label>
+                        
+                        <input
+                        type="number"
+                        id="n2"
+                        step="any"
+                        placeholder="Ingrese el segundo numero:">
+                        
+                    </div>
+                    
+                    <hr>
+                    
+                    <button type="button" onclick="compararNumeros()">
+                        Calcular comparacion
+                    </button>
+                    
+                    <div id="resultadoComparacion" class="resultado"></div>
+                    
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    </div>
+    
+    <script src="lab.js"></script>
+</body>
+
+</html>
